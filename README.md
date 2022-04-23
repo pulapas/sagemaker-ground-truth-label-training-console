@@ -1,5 +1,3 @@
-# Easily label training data for machine learning at scale (AIM-406) 
-
 ### Summary 
 Brand protection is one of the top priority for any enterprise. It not only helps to stop counterfeit sales but also prevent brand image. Using AI and machine learning we can help companies to protect their brand from different sources including social media. However to build a machine learning model for brand protection use case you need a large, high-quality, labeled dataset. Amazon SageMaker Ground Truth will help you build high-quality training datasets for your machine learning models. With Ground Truth, you can use labelers from either Amazon Mechanical Turk, a vendor company that you choose, or an internal, private workforce along with machine learning to enable you to create a labeled dataset. You can use the labeled dataset output from Ground Truth to train machine learning model on Amazon SageMaker or using our AI services such as Amazon Rekognition for computer vision use cases .
 
