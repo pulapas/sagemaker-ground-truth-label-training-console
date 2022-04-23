@@ -116,7 +116,7 @@ Copy your User name and Temporary password into your notepad. We will use them t
 
 ![Create a bucket](images/2_2.png)
 
-3. Give the bucket a unique name <(yourname-reinvent-2021)> and leave everything default and click on Create bucket. Ensure that it is in the same AWS region as Ground Truth. 
+3. Give the bucket a unique name <(your account number)-gt> and leave everything default and click on Create bucket. Ensure that it is in the same AWS region as Ground Truth. 
 
 ![Assign a unique name to the bucket](images/2_3.png)
 
@@ -129,11 +129,11 @@ Copy your bucket name into your notepad. We will use it in our Sagemaker noteboo
 
 ![Naviagte to Amazon SageMaker](./images/1_1.png)
 
-2. Click on Open SageMaker Studio. 
+2. Click on Launch SageMaker Studio. 
 
 ![Navigate to Sagemaker Studio](./images/4_1.png)
 
-3. You should already see a user "sagemakeruser" created for you. Click on Open Studio, you will be directed to Launcher screen.
+3. You should already see a user "sagemakeruser" created for you. Click on Launch app -> Studio, you will be directed to Launcher screen.
 
 ![Navigate to Sagemaker Studio](./images/4_2.png)
 
@@ -146,15 +146,15 @@ Copy your bucket name into your notepad. We will use it in our Sagemaker noteboo
 
 2. In Terminal type 
 
-`git clone https://github.com/aws-samples/sagemaker-ground-truth-label-training-data.git`
+`git clone https://github.com/pulapas/sagemaker-ground-truth-label-training-console.git`
 
 ![Git clone](./images/6_2.png)
 
-3. You should now see reinvent2021-aim406 folder on the right pane
+3. You should now see sagemaker-ground-truth-label-training-console folder on the left pane
 
 ![Cloned](./images/6_3.png)
 
-4. Click and open ipynb notebook from the folder downloaded
+4. Click and open gt_job_submit.ipynb notebook from the folder downloaded
 
 ![Open Notebook](./images/6_4.png)
 
@@ -170,11 +170,11 @@ Follow the intructions and execute all the cells in the notebook.
 
 ## Step 6 : Verify the labelling job creation
 
-1. Navigate to the Sagemaker console via service locator on top and select "Ground Truth" -> "Labelling Jobs". 
+1. Navigate to the Sagemaker console via service locator on top and select "Ground Truth" -> "Labeling Jobs". 
 
 ![Labelling Jobs](./images/7_2.png)
 
-2. You should now see a labelling job with "In progress" status. Click on the job name.
+2. You should now see a labeling job with "In progress" status. Click on the job name.
 
 ![Labelling Jobs](./images/7_3.png)
 
@@ -234,7 +234,7 @@ Since the set we labeled was very small, it is safe to assume that Ground Truth 
 
 ## Step 9 : Automatic labeling
 
-1. It takes few hundreds of labeled images for Ground Truth to train a model which can label the rest of them with relatively high degree of confidence. To illustrate the accuracy of Ground Truth automatic labeling, we pre-processed a different batch of 1000 pictures ahead of time and here is the breakdown of human vs automatic labeling stats:
+1. It takes few hundreds of labeled images for Ground Truth to train a model which can label the rest of them with relatively high degree of confidence. To illustrate the accuracy of Ground Truth automatic labeling, we pre-processed a different batch of 1000 pictures ahead of time and here is the breakdown of human vs automatic labeling stats: (mIou stands for mean Intersection over union and indicates how accurate the bounding box label annotated by the worker is compared the real label)
 
 ![AutoLabe](./images/auto_labeling_performance.png)
 
